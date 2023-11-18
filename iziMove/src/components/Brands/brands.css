@@ -1,0 +1,50 @@
+.brands__list {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  overflow: hidden;
+  background-color: var(--text-colorWhite);
+  color: #000;
+}
+
+.brands__scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+.brands__scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.brands__scroll p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.brands__rightToLeft {
+  animation: brands__rightToLeft 15s infinite linear;
+}
+
+@keyframes brands__rightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.brands__leftToRight {
+  animation: brands__leftToRight 15s infinite linear;
+}
+
+@keyframes brands__leftToRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
